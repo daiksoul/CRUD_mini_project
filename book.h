@@ -3,7 +3,9 @@
 
 typedef struct{
 	char name[20];
+	char genre[20];
 	char author[20];
+	int price;
 	int star;
 }Book;
 
