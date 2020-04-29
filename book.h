@@ -6,3 +6,17 @@ typedef struct{
 	char author[20];
 	int star;
 }Book;
+
+int addbook(Book *b);
+void readbook(Book b);
+int updatebook(Book *b);
+int deleteproduct(Book *b);
+int selectMenu();
+void listbook(Book *b, int count);
+int selectdatano(Book *b, int count);
+void savebook(Book *b, int count);
+int loadbook(Book *b);
+void searchbyname(Book *b, int count);
+void searchbyauthor(Book *b, int count);
+void searchbystar(Book *b, int count);
+int chooseby();
