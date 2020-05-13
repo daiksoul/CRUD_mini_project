@@ -8,7 +8,7 @@ void searchbyname(Book *b, int count){
 	printf("키워드를 입력하세요 : ");
 	scanf("%[^\n]",keyw);
 	for(int i =0 ; i<count; i++)
-		if(strset(b[i].name,keyw))
+		if(strstr(b[i].name,keyw))
 			readbook(b[i]);
 }
 void searchbyauthor(Book *b, int count){
@@ -16,7 +16,7 @@ void searchbyauthor(Book *b, int count){
 	printf("키워드를 입력하세요 : ");
 	scanf("%[^\n]",keyw);
 	for(int i =0 ; i<count; i++)
-		if(strset(b[i].author,keyw))
+		if(strstr(b[i].author,keyw))
 			readbook(b[i]);
 }
 
